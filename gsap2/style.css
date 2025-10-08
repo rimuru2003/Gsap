@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Smooth wrapper if using ScrollSmoother */
+#smooth-wrapper {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+#smooth-content {
+  width: 100%;
+}
+
+/* Fullscreen pages */
+#page1, #page2, #page3 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Page background colors */
+#page1 { background-color: aquamarine; }
+#page2 { background-color: rebeccapurple; }
+#page3 { background-color: yellowgreen; }
+
+/* Box styling */
+#box {
+  height: 300px;
+  width: 300px;
+  background-color: burlywood;
+}
+
+/* Page2 heading */
+#page2 h1 {
+  font-size: 30vw;
+  max-width: 100%;
+  text-transform: uppercase;
+  font-weight: 600;
+}

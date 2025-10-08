@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+
+#box1{
+    height: 300px;
+    width: 300px;
+    background-color: crimson;
+}
+
+#box2{
+ height: 300px;
+    width: 300px;
+    background-color: white;
+}
+
+h1 {
+  font-size: 50px;
+  color: white;
+}
+
+
+#nav {
+  display: flex;
+  justify-content: space-between; /* Logo left, links right */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  padding: 30px 50px;
+}
+
+#nav .nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+#nav .nav-links h2 {
+  margin: 0;
+  cursor: pointer;
+  gap: 40px;
+}
+
+#nav .nav-links h2:hover {
+  color: #00adb5;
+}
