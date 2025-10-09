@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+#aboutus {
+  height: 100vh;
+  background: linear-gradient(135deg, #6dd5ed, #2193b0);
+}
+#contact {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background: #8dc63f;
+  border-radius: 0 0 30px 30px;
+  color: #fff;
+}
+.contact-container {
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+}
+#contact h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+#contact p {
+  font-size: 16px;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+.flip-card {
+  perspective: 1500px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.main{
+  position: relative;
+  z-index: 6;
+  
+
+}
+.flip-inner {
+  position: relative;
+  width: 100%;
+  min-height: 420px;
+  transform-style: preserve-3d;
+  transition: transform 0.7s ease-in-out;
+}
+.flip-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flip-back {
+  transform: rotateY(180deg);
+  background: rgba(0, 0, 0, 0.08);
+}
+.pill-btn,
+.text-btn,
+.submit-btn {
+  padding: 12px 24px;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 15px;
+}
+.pill-btn:hover,
+.text-btn:hover,
+.submit-btn:hover {
+  background: #fff;
+  color: #8dc63f;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+.form-row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.form-row input,
+textarea {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-size: 14px;
+}
+textarea {
+  resize: none;
+}
+.captcha {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+@media (max-width: 768px) {
+  #contact h1 {
+    font-size: 36px;
+  }
+  .form-row {
+    flex-direction: column;
+  }
+  .flip-inner {
+    min-height: 500px;
+  }
+}
+#footer {
+  height: 50vh;
+  width: 100%;
+  background: brown;
+  position: sticky;
+  z-index: -5;
+  bottom: 0;
+}

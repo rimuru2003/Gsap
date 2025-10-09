@@ -1,0 +1,27 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+#div-stack {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+.stack-div {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 300ms ease;
+}
+.stack-div.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* spacer creates the needed scroll length: (#slides-1) * 500px */
+#spacer {
+  height: calc((7 - 1) * 500px);
+} /* change 7 to your slide count */

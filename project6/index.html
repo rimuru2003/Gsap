@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Flip UI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="main">
+    <div id="aboutus"></div>
+
+    <div id="contact">
+      <div class="contact-container">
+        <h1>Let's Engage</h1>
+        <p>Engaging Naturally, Get A Great Experience</p>
+
+        <div class="flip-card">
+          <div class="flip-inner" id="flipInner">
+            <!-- Front -->
+            <div class="flip-face flip-front">
+              <h2>Have a project in mind?</h2>
+              <p>Tap the button and tell us about it.</p>
+              <button id="openForm" class="pill-btn">Open Contact Form</button>
+            </div>
+            <!-- Back -->
+            <div class="flip-face flip-back">
+              <form class="contact-form">
+                <div class="form-row">
+                  <input type="text" placeholder="First Name *" />
+                  <input type="text" placeholder="Last Name *" />
+                </div>
+                <div class="form-row">
+                  <input type="email" placeholder="Email *" />
+                  <input type="text" placeholder="Subject *" />
+                </div>
+                <textarea placeholder="Your Message *"></textarea>
+                <div class="captcha">
+                  <input type="checkbox" id="robot" /><label for="robot">I'm not a robot</label>
+                </div>
+                <div class="form-actions">
+                  <button type="button" id="backBtn" class="text-btn">Back</button>
+                  <button type="submit" class="submit-btn">Send Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="footer">
+    <img src="/project6//img3.png" alt="">
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
