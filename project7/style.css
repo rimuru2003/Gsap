@@ -21,7 +21,6 @@ body {
   pointer-events: auto;
 }
 
-/* spacer creates the needed scroll length: (#slides-1) * 500px */
 #spacer {
   height: calc((7 - 1) * 500px);
-} /* change 7 to your slide count */
+} 

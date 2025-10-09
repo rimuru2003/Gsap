@@ -18,12 +18,7 @@ const tl = gsap.timeline({
     scrub: true,
     pin: true,
     anticipatePin: 1,
-    // optional: snap to each slide boundary
-    // snap: {
-    //   snapTo: (p) => Math.round(p * (slides.length - 1)) / (slides.length - 1),
-    //   duration: 0.2,
-    //   inertia: false,
-    // },
+  
   },
 });
 

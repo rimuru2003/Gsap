@@ -41,12 +41,10 @@ gsap.to("#page2 h1", {
     start: "top 0%",
     end: "top -100%",
     scrub: 2,
-    pin: true,
-    // markers: true, // you can comment this safely now
+    // pin: true,
+    markers: true, // you can comment this safely now
   },
 });
-
-
 
 gsap.from("#page3 #box", {
   scale: 0,
@@ -56,7 +54,7 @@ gsap.from("#page3 #box", {
   scrollTrigger: {
     trigger: "#page3 #box",
     // scroller: "body",
-    start: "top 80%",
+    start: "top 70%",
     end: "bottom 50%",
     scrub: 1,
     markers: true,

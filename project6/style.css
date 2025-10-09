@@ -41,7 +41,7 @@ body {
   opacity: 0.9;
 }
 .flip-card {
-  perspective: 1500px;
+  /* perspective: 1500px; */
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
@@ -73,7 +73,7 @@ body {
 }
 .flip-back {
   transform: rotateY(180deg);
-  background: rgba(0, 0, 0, 0.08);
+  background: rgba(209, 113, 113, 0.08);
 }
 .pill-btn,
 .text-btn,
@@ -148,4 +148,5 @@ textarea {
   position: sticky;
   z-index: -5;
   bottom: 0;
+  object-fit: contain;
 }

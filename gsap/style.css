@@ -12,24 +12,22 @@ body {
   background-color: black;
 }
 
-
-#box1{
-    height: 300px;
-    width: 300px;
-    background-color: crimson;
+#box1 {
+  height: 300px;
+  width: 300px;
+  background-color: crimson;
 }
 
-#box2{
- height: 300px;
-    width: 300px;
-    background-color: white;
+#box2 {
+  height: 300px;
+  width: 300px;
+  background-color: white;
 }
 
 h1 {
   font-size: 50px;
   color: white;
 }
-
 
 #nav {
   display: flex;
@@ -54,4 +52,16 @@ h1 {
 
 #nav .nav-links h2:hover {
   color: #00adb5;
+}
+
+#box3 {
+  height: 300px;
+  width: 300px;
+  background-color: rgb(204, 223, 75);
+}
+
+#box4 {
+  height: 300px;
+  width: 300px;
+  background-color: rgb(57, 154, 195);
 }
